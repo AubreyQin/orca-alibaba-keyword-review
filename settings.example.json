@@ -1,0 +1,30 @@
+{
+  "workflow_name": "阿里巴巴国际站广告词精准度审核",
+  "mode": "recommendations_only",
+  "platform": "阿里巴巴国际站",
+  "dashboard_url": null,
+  "account_scope": null,
+  "browser": {
+    "access_method": "opencli_only",
+    "executable": "opencli",
+    "profile": null,
+    "session": "alibaba-keyword-review"
+  },
+  "date_range": {
+    "start": null,
+    "end": null,
+    "timezone": null
+  },
+  "term_type": "as_labeled_on_page",
+  "filter": {
+    "metric_label": "点击占比",
+    "normalized_field": "click_share",
+    "operator": ">",
+    "value": 0
+  },
+  "click_share_denominator": null,
+  "products": [],
+  "recommendation_basis": "product_semantic_relevance",
+  "prioritization": "mismatch_then_click_share_within_same_scope",
+  "platform_downweight_action": null
+}
