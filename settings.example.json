@@ -3,7 +3,14 @@
   "mode": "recommendations_only",
   "platform": "阿里巴巴国际站",
   "dashboard_url": null,
-  "account_scope": null,
+  "campaign": {
+    "id": null,
+    "name": null
+  },
+  "account_scope": {
+    "account_label": null,
+    "store_display_name": null
+  },
   "browser": {
     "access_method": "opencli_only",
     "executable": "opencli",
@@ -13,8 +20,16 @@
   "date_range": {
     "start": null,
     "end": null,
-    "timezone": null
+    "source": "user_set_on_page",
+    "note": "由用户在后台页面设置好；agent 只读取并记录，不改动"
   },
+  "page_range": {
+    "start": null,
+    "end": null,
+    "source": "user_specified",
+    "note": "由用户每次明确指定；agent 只读指定页码"
+  },
+  "page_size": 50,
   "term_type": "as_labeled_on_page",
   "filter": {
     "metric_label": "点击占比",
@@ -22,9 +37,9 @@
     "operator": ">",
     "value": 0
   },
-  "click_share_denominator": null,
-  "products": [],
-  "recommendation_basis": "product_semantic_relevance",
-  "prioritization": "mismatch_then_click_share_within_same_scope",
-  "platform_downweight_action": null
+  "match_mode": "category_rules",
+  "active_product": null,
+  "output_directory": null,
+  "platform_downweight_action": null,
+  "product_images": "产品资料/<active_product>/图片/"
 }
